@@ -55,7 +55,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     color: var(--accent-lavender);
     padding: 10px 15px;
     border-radius: 5px;
@@ -63,6 +63,12 @@ body {
     font-weight: 700;
     width: calc(100% - 40px); /* Garante que a largura acompanhe o slide */
     box-sizing: border-box;  /* Inclui padding na largura total */
+}
+.title {
+    color: var(--accent-lavender);
+}
+.paragraph {
+    color: var(--accent-blue);
 }
 /* Fonte e cores gerais do corpo da página */
 
