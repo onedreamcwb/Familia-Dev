@@ -1,0 +1,38 @@
+.nav button {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 50%; /* Botões arredondados */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de clique */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento */
+    z-index: 10; /* Garante que fique acima das imagens */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.nav button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo mais claro ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+#prev {
+    left: 10px; /* Posiciona à esquerda */
+}
+
+#next {
+    right: 10px; /* Posiciona à direita */
+}
+
+.slide img {
+    width: 100%; /* Ocupa toda a largura do slide */
+    height: 700px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorção */
+    display: block; /* Remove espaços extras ao redor da imagem */
+}
