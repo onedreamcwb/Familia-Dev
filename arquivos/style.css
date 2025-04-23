@@ -1,0 +1,84 @@
+:root {
+    /* Bases */
+    --bg-dark:   #0D0F14;
+    --bg-base:   #1F2228;
+    --text-main: #E0E0E0;
+  
+    /* Accents */
+    --accent-blue:    #00D9FF;
+    --accent-magenta: #FF00FF;
+    --accent-lavender:#A76EFF;
+  }
+
+/* Reset básico para remover margens/paddings padrão */
+/* style.css */
+
+/* 1. Import da fonte (deve ser a primeira linha) */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 2. Demais estilos abaixo… */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Special Gothic', sans-serif;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--bg-base);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,0.1);
+}
+/* Wrapper flexível que contém todos os slides lado a lado */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/* Cada slide ocupa 100% da largura do contêiner */
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+/* Legenda em sobreposição no canto inferior esquerdo */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--accent-lavender);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: calc(100% - 40px); /* Garante que a largura acompanhe o slide */
+    box-sizing: border-box;  /* Inclui padding na largura total */
+}
+/* Fonte e cores gerais do corpo da página */
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.nav button {
+    background: rgba(0,0,0,0,0.5);
+    border: none;
+    color: var(--text-main);
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
