@@ -48,7 +48,7 @@ body {
 }
 .slide img {
     width: 100%;
-    display: block;
+    height: auto;
 }
 /* Legenda em sobreposição no canto inferior esquerdo */
 .caption {
@@ -81,4 +81,18 @@ body {
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.nav button:hover {
+    background: rgba(0,0,0,0,0.7);
+}
+@media (max-width: 768px) {
+    .caption {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+    .nav button {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
 }
